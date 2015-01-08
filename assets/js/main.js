@@ -1,7 +1,3 @@
-$(".news").masonry({
-    itemSelector: '.entry',
-    "gutter": 30
-})
 
 $(function(){
     window.onscroll  = function () { 
@@ -25,5 +21,15 @@ $(function(){
                 $(".share__list").addClass('dn');
                 $(this).removeClass('share__hover');
     })
+
+
+    $(".news").masonry({
+        itemSelector: '.entry',
+        "gutter": 30
+    }).imagesLoaded(function() {
+        console.log('all images are loaded');
+        $('.news').masonry('reloadItems');
+    });
+
 
 })
