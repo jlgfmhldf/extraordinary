@@ -3,7 +3,7 @@ $(function(){
     window.onscroll  = function () { 
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrolled >= 100) {
+        if (scrolled >= 78) {
             $(".categories").addClass('padding');
         } else {
             $(".categories").removeClass('padding');
