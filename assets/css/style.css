@@ -383,6 +383,9 @@ width:calc(100vw - 115px);
   .header__container__item {
     padding: 30px 20px;
   }
+  a.share {
+    width: 106px;
+  }
 }
 .categories {
   padding: 78px 0 0 0;
@@ -533,5 +536,28 @@ left:calc(50% - 50px);
   transition-duration: .8s;
 }
 #preloader.remove.dn {
+  display: none;
+}
+.search.click {
+  text-decoration: none;
+}
+.search.click input {
+  position: relative;
+  width: 222px;
+  height: 32px;
+  top: -32px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding-left: 32px;
+  box-sizing: border-box;
+}
+.search.click img {
+  z-index: 100;
+  position: relative;
+  left: 7px;
+  top: 0px;
+}
+.search__input {
   display: none;
 }

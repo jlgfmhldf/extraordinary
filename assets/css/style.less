@@ -421,6 +421,10 @@ a.share{
         padding: 30px 20px;
     }
 
+    a.share {
+        width: 106px;
+    }
+
 }
 
 
@@ -615,5 +619,35 @@ a.share{
         transition-duration: .8s;
 
         &.dn {display: none;}
+    }
+}
+
+
+
+.search.click {
+    text-decoration: none;
+    input {
+        position: relative;
+        width: 222px;
+        height: 32px;
+        top: -32px;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+
+    img {
+        z-index: 100;
+        position: relative;
+        left: 7px;
+        top: 0px;
+    }
+}
+
+.search {
+    &__input {
+        display: none;
     }
 }

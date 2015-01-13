@@ -31,6 +31,14 @@ $(function(){
         $("#preloader").addClass('remove').animate({'opacity': 0}, 500);
         
     });
+
+    $(".search").hover(function() {
+        $(this).click(function() {
+            $(this).addClass('click');
+        })
+    })
+
+
 })
 
 
