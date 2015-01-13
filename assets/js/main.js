@@ -22,13 +22,12 @@ $(function(){
                 $(this).removeClass('share__hover');
     })
 
-
     $(".news").imagesLoaded(function() {
         console.log('all images are loaded');
         $(".news").masonry({
             itemSelector: '.entry',
             "gutter": 30
-        })
+        }).animate({'opacity': 1}, 500);
         
     });
 })
