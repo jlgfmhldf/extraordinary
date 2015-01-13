@@ -515,3 +515,20 @@ width:calc(100vw - 115px);
   display: none;
   font-family: 'Montserrat', sans-serif;
 }
+#preloader {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  top: 173px;
+  -lh-property: 0;
+left:-webkit-calc(50% - 50px);
+left:-moz-calc(50% - 50px);
+left:calc(50% - 50px);
+;
+}
+#preloader.remove {
+  transform: scale(0);
+  transition-duration: .8s;
+}

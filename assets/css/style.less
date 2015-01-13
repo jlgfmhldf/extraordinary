@@ -600,3 +600,18 @@ a.share{
         font-family: @montserrat;
     }
 }
+
+#preloader {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    top: 173px;
+    .calc(left, ~'50% - 50px');
+
+    &.remove {
+        transform: scale(0);
+        transition-duration: .8s;
+    }
+}
