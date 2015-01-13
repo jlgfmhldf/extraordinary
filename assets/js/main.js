@@ -23,13 +23,14 @@ $(function(){
     })
 
 
-    $(".news").masonry({
-        itemSelector: '.entry',
-        "gutter": 30
-    }).imagesLoaded(function() {
+    $(".news").imagesLoaded(function() {
         console.log('all images are loaded');
-        $('.news').masonry('reloadItems');
+        $(".news").masonry({
+            itemSelector: '.entry',
+            "gutter": 30
+        })
+        
     });
-
-
 })
+
+
