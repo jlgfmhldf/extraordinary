@@ -28,7 +28,7 @@ $(function(){
             itemSelector: '.entry',
             "gutter": 30
         }).animate({'opacity': 1}, 500);
-        $("#preloader").addClass('remove');
+        $("#preloader").addClass('remove').animate({'opacity': 0}, 500);
         
     });
 })

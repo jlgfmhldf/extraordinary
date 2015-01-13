@@ -532,3 +532,6 @@ left:calc(50% - 50px);
   transform: scale(0);
   transition-duration: .8s;
 }
+#preloader.remove.dn {
+  display: none;
+}
