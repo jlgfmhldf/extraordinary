@@ -358,6 +358,30 @@ width:calc(100vw - 115px);
     margin: 0 auto;
     width: 98%;
   }
+  .share__list {
+    width: 106px;
+    box-shadow: none;
+    border: none;
+    top: 58px;
+    background: #171717;
+  }
+  .share__list li {
+    border: none;
+  }
+  .share__list li span {
+    border: none !important;
+  }
+  .share__list__item span + span {
+    display: none;
+  }
+  .share__list__item {
+    width: 53px;
+    height: 43px;
+    float: left;
+  }
+  .header__container__item {
+    padding: 30px 20px;
+  }
 }
 .categories {
   padding: 78px 0 0 0;

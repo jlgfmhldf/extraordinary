@@ -265,7 +265,7 @@ width:calc(100% - 79px);
   position: relative;
   right: 0;
   top: 15px;
-  right: 31px;
+  right: 19px;
   font-size: 19px;
   cursor: pointer;
 }
@@ -405,5 +405,8 @@ width:calc(100% - 70px);
     line-height: 22px;
     color: #656565;
     font-weight: 600;
+  }
+  .comment__footer {
+    display: none;
   }
 }
