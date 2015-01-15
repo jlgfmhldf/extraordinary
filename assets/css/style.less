@@ -425,6 +425,17 @@ a.share{
         width: 106px;
     }
 
+    .search__click ~ .header__container__item {display: none;}
+
+    .search__click {
+        position: absolute;
+        background: #171717;
+        right: 0;
+        padding: 30px 10px;
+    }
+
+    .header__container {position: relative;}
+
 }
 
 
@@ -615,8 +626,8 @@ a.share{
     .calc(left, ~'50% - 50px');
 
     &.remove {
-        transform: scale(0);
-        transition-duration: .8s;
+        .scale(0);       
+        .transition-duration(80);
 
         &.dn {display: none;}
     }
@@ -624,7 +635,7 @@ a.share{
 
 
 
-.search.click {
+.search__click {
     text-decoration: none;
     input {
         position: relative;
@@ -647,6 +658,8 @@ a.share{
 }
 
 .search {
+    cursor: pointer;
+    
     &__input {
         display: none;
     }

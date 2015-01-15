@@ -28,16 +28,19 @@ $(function(){
             itemSelector: '.entry',
             "gutter": 30
         }).animate({'opacity': 1}, 500);
-        $("#preloader").addClass('remove').animate({'opacity': 0}, 500);
+        $("#preloader").addClass('remove').animate({'opacity': 0}, 100);
         
     });
 
-    $(".search").hover(function() {
-        $(this).click(function() {
-            $(this).addClass('click');
-        })
+    $('.search').click(function() {
+        $(this).addClass('search__click');
+        $('.search__input').focus();
+        return false;    
     })
 
+    $('body').click(function() {
+        $('.search').removeClass('search__click');
+    })
 
 })
 
