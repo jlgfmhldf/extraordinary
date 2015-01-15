@@ -40,6 +40,11 @@ $(function(){
 
     $('body').click(function() {
         $('.search').removeClass('search__click');
+    });
+
+    $('.entry__photo_hover__button').click(function() {
+        document.location.href = "./entry_1.html";
+
     })
 
 })
